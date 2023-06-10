@@ -13,3 +13,9 @@ A simple TOdo-list manager as a web service using Flask, a simple web service fr
 ## Blog
 A Flask-based blog application that mimics some characteristics of PHP. 
 This includes basic CRUD (Create, Read, Update, Delete) operations.
+
+**Feartures**
+* Create a new article (Titke + Body)
+* See blog list and Read all articles
+* Edit an article
+* Delete an article
