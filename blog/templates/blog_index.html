@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <a href="/article/new">Create new article</a>
+    {% for article in articles %}
+    <div>
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.body }}</p>
+        <a href="/article/{{ article.id }}">Edit</a>
+        <form action="/article/{{ article.id }}/delete" method="post">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+    {% endfor %}
+</body>
+</html>
